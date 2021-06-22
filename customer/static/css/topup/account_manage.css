@@ -1,0 +1,12 @@
+.textfield{
+
+    font-size: 13px;
+    margin-left: 70px
+}
+.textfield p{
+    color: black;
+}
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+}

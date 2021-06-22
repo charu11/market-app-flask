@@ -1,0 +1,113 @@
+{% extends 'topup.html'  %}
+{% block title %}
+credit topup page
+{% endblock %}
+
+{% block breadcrumb %}
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Credit Topup</li>
+              </ol>
+            </nav>
+{% endblock %}
+
+
+{% block page_content%}
+<div class="topup">
+    <div class="boxed">
+      {% for credit in credits %}
+      <h4>Credit Balance: {{ credit.balance }}$</h4>
+      {% endfor %}
+    </div>
+    <br>
+    <div class="boxed">
+      <h4>Topup Amount:</h4>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <ul>
+              <li><button class="btn btn-light" style="width:80%; height: 50px;"> US$ 30  </button></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul><li><button class="btn btn-light" style="width:80%; height: 50px;"> US$ 30  </button></li></ul>
+          </div>
+          <div class="col-sm-3">
+            <ul><li><button class="btn btn-primary" style="background: red; width:80%; height: 50px;"> US$ 250</button></li></ul>
+          </div>
+          <div class="col-sm-3">
+          <ul><li><button class="btn btn-light" style="width:80%; height: 50px;"> US$ 500</button></li></ul>
+          </div>
+        </div>
+        <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <ul>
+              <li><button class="btn btn-light" style="width:80%; height: 50px;">Input Amount</button></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul><li><button class="btn btn-primary" type="submit" style="width:80%; height: 50px;">Top UP </button></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+    <div class="boxed">
+      <h4 id="coupon"> Your Coupon</h4>
+      <hr>
+    </div>
+
+
+
+
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Coupon Type</th>
+          <th scope="col">Coupon Code</th>
+          <th scope="col">Valid Date</th>
+          <th scope="col">Gift Time</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for credit in credits %}
+        <tr>
+
+          <th> {{ credit.coupon_type }}</th>
+          <td>{{ credit.coupon_code }}</td>
+          <td>{{ credit.valid_date }}</td>
+          <td>{{ credit.gift_time }}</td>
+          {% endfor %}
+        </tr>
+
+      </tbody>
+    </table>
+
+    <nav class="pagination" aria-label="Page navigation example" >
+      <div class="text-xs-center">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+.ppc_report .boxed{
+    background: #94C973;
+    margin: 20px;
+
+}
+
+.ppc_report .para{
+    color: black;
+    text-align: center;
+
+}
+
+.order_list{
+    margin: 20px;
+}

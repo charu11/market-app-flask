@@ -1,0 +1,37 @@
+.boxed h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.container .row ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container .btn{
+    border: 2px solid black;
+    width: 75%%;
+    height: 50%;
+}
+
+#coupon_name{
+
+}
+
+.pagination ul li{
+    text-align: center;
+
+}
+
+.pagination {
+     position: absolute;
+     left: 50%;
+     transform: translatex(-50%);
+     border-bottom: none;
+
+
+

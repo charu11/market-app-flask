@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Asin Report</li>
+              </ol>
+            </nav>
+
+<div class="asinReport">
+  <div class="boxed">
+    <h4 style="font:16px;">Introduction: </h4>
+    <hr>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis elementum arcu. Duis mollis cursus nunc, quis tempor odio tempor volutpat. Etiam eu faucibus tortor. Integer quis magna laoreet, maximus quam at, mattis neque. Suspendisse auctor felis sit amet velit dapibus, at tincidunt turpis lobortis. Aliquam erat volutpat. Pellentesque vel blandit nulla. Praesent pulvinar scelerisque dolor, sed pharetra lectus faucibus eget. Fusce sodales bibendum sapien, in aliquam velit porttitor et. </p>
+    <p style="color: black;">price 75 credits</p>
+    <p style="color:black;">sample: 3XXXX</p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <h5 style="font-size:15px; font-weight:bold; text-align:center;">Market Place</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <form>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Input ASIN here">
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-3">
+      <ul>
+        <li><button type="submit" class="btn btn-primary">Submit</button></li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="order_list">
+  <div class="boxed">
+    <h4 style="font:15px;">Order List: </h4>
+  </div>
+    <hr>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">ASIN</th>
+      <th scope="col">Country</th>
+      <th scope="col">Cost</th>
+      <th scope="col">Status</th>
+      <th scope="col">Submit Data</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for seller in sellers %}
+    <tr>
+      <td>{{ seller.seller_id }}</td>
+      <td>{{ seller.country }}</td>
+      <td>{{ seller.country }}</td>
+      <td>{{ seller.status }}</td>
+      <td>{{ seller.submit_data }}</td>
+    {% endfor %}
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+
+
+{% endblock %}
+

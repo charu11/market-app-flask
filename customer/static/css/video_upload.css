@@ -1,0 +1,19 @@
+.video_upload .boxed{
+    background: #94C973;
+    margin: 20px;
+
+}
+
+.video_upload .para{
+    color: black;
+    text-align: center;
+
+}
+
+.order_list{
+    margin: 20px;
+}
+
+#dropdownMenuButton_video{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+.container .h4{
+    font-size: 18px;
+    text-align: center;
+}
+
+.coloring{
+    background: #2E2E2E
+}
+
+.container .btn{
+    width: 100%
+}
+
+.container h4{
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #000;
+   line-height: 0.1em;
+   margin: 10px 0 20px
+
+}
+
+.container h4 span{
+    font-size: 12px;
+    background:#fff;
+    padding:0 10px;
+
+}

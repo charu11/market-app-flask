@@ -1,0 +1,15 @@
+.asinReport .boxed{
+    background: #94C973;
+    margin: 20px;
+
+}
+
+.asinReport .para{
+    color: black;
+    text-align: center;
+
+}
+
+.order_list{
+    margin: 20px;
+}

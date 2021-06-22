@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Add A+ Content</li>
+              </ol>
+</nav>
+<div class="ppc_report">
+  <div class="boxed">
+    <h4 style="font:16px;">Introduction: </h4>
+    <hr>
+    <p class="para">Lorem ipsum dolor sit amet,quis tempor odio tempor volutpat. Etiam eu faucibus tortor. Integer quis magna laoreet, maximus quam at, mattis neque. Suspendisse auctor felis sit amet velit dapibus, at tincidunt turpis lobortis. Aliquam erat volutpat. Pellentesque vel blandit nulla. Praesent pulvinar scelerisque dolor, sed pharetra lectus faucibus eget. Fusce sodales bibendum sapien, in aliquam velit porttitor et. </p>
+    <p style="color: black;">price 75 credits</p>
+
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h5 style="font-size:15px; font-weight:bold;margin-top:2px;">Download and fill out A+ Template Form:</h5>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" style="color:blue;">A+ Template Form</a>
+    </div>
+    <div class="col-sm-4">
+      <p style="text-align:center; font-size:14px;">Have no A+ content yet? Check here to see how we can help you</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h5 style="font-size:15px; font-weight:bold;">Upload your A+ content Form and Images:</h5>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <form action="" style="text-align:center;">
+        <input type="file" id="A+_file">
+      </form>
+    </div>
+    <div class="col-4">
+      <p style="color:red;font-size:14px;">* Support Zip format. max 50MB</p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <h5 style="font-size:15px; font-weight:bold;text-align:center;margin-top:8px;">Market Place:</h5>
+    </div>
+    <div class="col-sm-3">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="text-align:left;">
+          Select
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <ul>
+        <li><h5 style="font-size:15px;font-weight:bold;color:black;text-align:right;">ASIN:</h5></li>
+        <li><h5 style="font-size:14px;color:black;text-align:center;">(Provide all the ASINs if they share same A+ Page)</h5></li>
+      </ul>
+    </div>
+    <div class="col-3">
+      <form action="" >
+        <input type="text" id="asins_feed" style="width:100%; height:100px; border: 2px solid black">
+      </form>
+    </div>
+    <div class="col-5">
+      <button class="btn btn-primary"  type="submit" style="width:50%; text-align:center; margin-left:30px;margin-top:18px; ">Submit(79 Credits)</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="order_list">
+  <div class="boxed">
+    <h4 style="font:15px;">Order List: </h4>
+  </div>
+    <hr>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Store Name</th>
+      <th scope="col">Country</th>
+      <th scope="col">Seller ID</th>
+      <th scope="col">Cost</th>
+      <th scope="col">Submit Data</th>
+      <th scope="col">Status</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td></td>
+      <td> </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+{% endblock %}
+

@@ -1,0 +1,106 @@
+
+{% extends 'topup.html' %}
+{% block title %}
+Top up records
+{% endblock %}
+
+{% block breadcrumb %}
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">TopUp Record</li>
+              </ol>
+            </nav>
+{% endblock %}
+
+
+
+{% block page_content %}
+<div class="topup_record">
+  <div class="boxed">
+    <h4 style="font:15px;">Topup Records: </h4>
+  </div>
+    <hr>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Status</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Time</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+
+<nav class="pagination" aria-label="Page navigation example" style="">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    <br>
+    <br>
+
+<div class="topup2">
+  <div class="boxed">
+    <h4 style="font:15px;">Other Records: </h4>
+</div>
+    <hr>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Service</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Time</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+
+<nav class="pagination" aria-label="Page navigation example" style="">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+{% endblock %}

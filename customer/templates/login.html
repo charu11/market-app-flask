@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div class="background_col" style="color:F7F7F7;" >
+    <div class="row" style="margin:80px;padding:20px;">
+        <div class="col-6" id="img_part" style="background:#FF8C00;">
+            <div class="img-container"></div>
+        </div>
+
+
+        <div class="col-6">
+            <div class="text-center">
+              <div class="container">
+                <form method="POST" class="form-signin">
+                    {{ form.hidden_tag() }}
+                  <h2 class="h4 mb-3 font-weight-normal" style="text-align:center">
+                    Let's Start
+                  </h2>
+                    <a class="btn" href="#">
+                        <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Sign In with Google</button>
+                    </a>
+                    <br>
+                    <br>
+                  <h5 style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+                      <span style="font-size: 13px; background-color: #fff; padding: 0 10px;margin-top:5px;">or Continue With</span>
+                  </h5>
+
+
+                  <br>
+                  {{ form.username.label()}}
+                  {{ form.username(class="form-control", placeholder="User Name")}}
+                    <br>
+                  {{ form.password.label()}}
+                  {{ form.password(class="form-control", placeholder="Password")}}
+                  <br>
+                  {{ form.submit(class="btn btn-lg btn-block btn-primary disabled") }}
+
+                  <br>
+
+                  <div class="checkbox mb-3">
+                    <span id="passwordHelpBlock" class="help-block"><a href="{{ url_for('reset_request') }}">Forgot Password ?</a></span>
+                    <h6> Do not have an account?   <a  href="{{ url_for('register_page') }}">Sign Up</a></h6>
+
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+<style>
+
+   .container {
+     margin: 50px auto;
+     width:80%;
+     text-align: left;
+    }
+
+  .img-container {
+    text-align: center;
+    display: block;
+    margin-top: 150px;
+
+}
+
+  #img_part{
+    background:#FF8C00;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

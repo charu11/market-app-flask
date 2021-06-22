@@ -1,0 +1,138 @@
+
+ 
+{% extends 'admin_layout.html' %} {% block content %}
+<div class="row">
+  <div class="col">
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Orders</li>
+      </ol>
+    </nav>
+    <hr>
+  </div>
+</div>
+
+<div class="row bg-white mx-0 ">
+  <div class="row" style="margin-left: 20px;">
+    <div class="col">
+      <h5>Orders:</h5>
+      <hr >
+      <form class="row" >
+        <div class="col-auto">
+          <input type="date" class="form-control" >
+        </div>
+        <div class="col-auto">
+          <input type="text" class="form-control" >
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-outline-secondary">Filter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row" style="margin-left:10px">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Order #</th>
+          <th>Service</th>
+          <th>Customer</th>
+          <th>Date</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#1001</td>
+          <td>ASIN Report</td>
+          <td>Tony</td>
+          <td>2020/04/01</td>
+          <td>75 Credits</td>
+          <td>Processing</td>
+          <td><button class="btn btn-outline-secondary">View</button></td>
+      </tbody>
+    </table>
+</div>
+
+<div class="row bg-white mx-0">
+  <div class="col">
+  <div class="row">
+    <div class="col">
+      <h5>Order Details</h5>
+      <hr >
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col-auto" >
+      <p >Order#: 1001</p>
+      <p>Order Date: 2020/04/22</p>
+      <p>Customer: Tony</p>
+      <p>Service: ASIN Report</p>
+      <p>Marketplace: www.amazon.com</p>
+      <p>ASIN: B0xxxxxx</p>
+    </div>
+    <div class="col">
+      <p>Email Address: tony1@gmail.com
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <h5>Order Action</h5>
+      <hr >
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col-md-2">
+          <span>Upload Results:</span>
+        </div>
+        <div class="col">
+          <input type="file">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2">
+          <p>Note to Customer:</p>
+        </div>
+        <div class="col">
+          <textarea></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2">
+          <p>Order Status</p>
+        </div>
+        <div class="col-md-2">
+          <select class="form-select">
+            <option selected>Select</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row justify-content-end">
+        <div class="col-auto">
+          <button class="btn btn-lg btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+{%endblock%}
+

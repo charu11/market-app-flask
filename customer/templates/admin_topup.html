@@ -1,0 +1,48 @@
+{% extends 'admin_layout.html' %} {% block content %}
+<div class="row">
+  <div class="col">
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Topup Manage</li>
+      </ol>
+    </nav>
+    <hr>
+  </div>
+</div>
+
+<div class="row bg-white mx-0">
+  <div class="col">
+    <p class="fw-bold">Total Topup Amount: 140 Credits</p>
+    <p class="fw-bold">Total Order Amount: 0 Credits</p>
+  </div>
+</div>
+
+<div class="row bg-white mx-0 mt-3">
+  <div class="col">
+    <h3>Topup Records:</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Customer</th>
+            <th>Email</th>
+            <th>Amount</th>
+            <th>Type</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2020/04/22 11:52:21</td>
+            <td>Tony</td>
+            <td>tony1@gmail.com</td>
+            <td>140 Credits</td>
+            <td>Topup</td>
+            <td></td>
+        </tbody>
+      </table>
+  </div>
+</div>
+
+{% endblock %}
