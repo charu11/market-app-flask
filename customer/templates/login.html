@@ -7,6 +7,21 @@
     <title>Title</title>
 </head>
 <body>
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for message, category in messages %}
+<div class="alert alert-{{ category }}">
+    <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    {{ category }}
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+
+
 <div class="background_col" style="color:F7F7F7;" >
     <div class="row" style="margin:80px;padding:20px;">
         <div class="col-6" id="img_part" style="background:#FF8C00;">
@@ -23,7 +38,7 @@
                     Let's Start
                   </h2>
                     <a class="btn" href="#">
-                        <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Sign In with Google</button>
+                        <button type="submit" class="btn btn-primary" style="margin-left:100px;" >Sign In with Google</button>
                     </a>
                     <br>
                     <br>

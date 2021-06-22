@@ -48,8 +48,8 @@ def register_page():
             except:
                 db.session.rollback()
 
-            flash(f'Account created Successfully...! you are now logged in as {{ user_to_create.username }}', category='success')
-            return redirect(url_for('topup_page'))
+            flash(f'Account created Successfully...!  now please login to continue', category='success')
+            return redirect(url_for('login_page'))
 
     return render_template('register.html')
 
